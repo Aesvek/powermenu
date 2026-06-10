@@ -1,5 +1,6 @@
 #!/bin/bash
-# Requires: dmenu, x11(wayland have issues)
+# Requires: dmenu, x11(will not work properly on Wayland)
+
 choice=$(printf "Shutdown\nReboot\nSuspend\nLogout\n" | dmenu -i -p "Power Menu:")
 
 case "$choice" in
